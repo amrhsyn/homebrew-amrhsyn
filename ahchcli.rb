@@ -5,11 +5,11 @@
 class Ahchcli < Formula
   desc ""
   homepage "https://github.com/amrhsyn/ahchcli/"
-  version "1.2"
+  version "11"
 
   on_macos do
-    url "https://github.com/amrhsyn/ahchcli/releases/download/v1.2/ahchcli_1.2_darwin_all.tar.gz"
-    sha256 "52e0e1bb0a0540d8ae4fe59c1dc43b90a04a61a7fc7e6fe063033a2918ff1d64"
+    url "https://github.com/amrhsyn/ahchcli/releases/download/v11/ahchcli_11_darwin_all.tar.gz"
+    sha256 "8ef84754c92d2534d375091427890d79e5509cf09eca0d2ae10a3f56c856f0a9"
 
     def install
       bin.install "ahchcli"
@@ -18,16 +18,16 @@ class Ahchcli < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/amrhsyn/ahchcli/releases/download/v1.2/ahchcli_1.2_linux_arm64.tar.gz"
-      sha256 "765962dd83805983b05575f3f4116a235fffbfe4eba8bd5b82114dcf6eea31d7"
+      url "https://github.com/amrhsyn/ahchcli/releases/download/v11/ahchcli_11_linux_arm64.tar.gz"
+      sha256 "5c74e9ef77083cd82f439faa54b7ab4eabafc04b8c87d687b7db95ca3cbc03cb"
 
       def install
         bin.install "ahchcli"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/amrhsyn/ahchcli/releases/download/v1.2/ahchcli_1.2_linux_amd64.tar.gz"
-      sha256 "260d91a7d806d3474f6a4d2ed852843feefdd217e6e4312a9757221fbef8e91d"
+      url "https://github.com/amrhsyn/ahchcli/releases/download/v11/ahchcli_11_linux_amd64.tar.gz"
+      sha256 "356ad01dffe47f287129ab5519be7b85dc26aed94706ae6713fa6034f1783f10"
 
       def install
         bin.install "ahchcli"
